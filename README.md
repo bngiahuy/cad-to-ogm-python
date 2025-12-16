@@ -42,7 +42,6 @@ ogm = cad_to_ogm(
     - `normalize`: Chuẩn hoá độ dày tường (True/False)
     - `detect_doors_flag`: Tự động phát hiện và lấp cửa (True/False)
     - `fill_closed_regions_flag`: Lấp kín các vùng trống khép kín (True/False)
-    - `return_intermediate`: Trả về thêm các kết quả trung gian để debug (True/False)
 
 ## 5. Input/Output
 - **Input:** Đường dẫn ảnh PNG bản vẽ CAD (nên là ảnh trắng đen, tường tối, nền sáng) `(lưu ý: không hỗ trợ ảnh SVG)`
