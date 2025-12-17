@@ -1,3 +1,4 @@
+import cv2
 import numpy as np
 from cad_ogm import cad_to_ogm
 import matplotlib.pyplot as plt
@@ -9,11 +10,10 @@ if __name__ == "__main__":
     ogm = cad_to_ogm(
         image_path,
         grid_size=(500, 500),
-        normalize=True,
-        detect_doors_flag=True,
+        fill_closed_regions_flag=True,
     )
     print(ogm)
     print("OGM unique values:", np.unique(ogm))
-    plt.imshow(ogm, cmap="gray")
+    plt.imshow(ogm, cmap='Greys', interpolation='nearest')
     plt.title("OGM Output")
     plt.show()
